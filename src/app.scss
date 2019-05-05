@@ -1,0 +1,67 @@
+/* Custom Theme */
+$color-brand: #00bcd4;
+$color-brand-light: #00bcd4;
+$color-brand-dark: #00bcd4;
+@import "~taro-ui/dist/style/index.scss";
+
+.page,
+view {
+  box-sizing: border-box;
+}
+
+.page {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.doc-body {
+  min-height: -webkit-calc(100vh - 180px);
+  min-height: calc(100vh - 180px);
+  background: #fff;
+  //box-shadow: 0 .55467rem 3.47733rem 0 rgba(0,0,0,.11);
+  padding-bottom: 60px;
+  padding-bottom: -webkit-calc(constant(safe-area-inset-bottom) + 20px);
+  padding-bottom: calc(constant(safe-area-inset-bottom) + 20px);
+  padding-bottom: -webkit-calc(env(safe-area-inset-bottom) + 20px);
+  padding-bottom: calc(env(safe-area-inset-bottom) + 20px)
+}
+
+.doc-body .panel {
+  margin: 32px 0 0;
+}
+
+.doc-body .panel-content {
+  padding: 0 20px;
+}
+
+.doc-body .panel-title {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  //padding-left: 20px;
+  color: #6a6a77;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.at-search-bar__input {
+  padding: 2PX 37PX;
+}
+.at-search-bar::after{
+    border: none;
+}
+
+.at-icon-trash {
+  float: right;
+  margin-top: 12px;
+}
+
+.tags-item {
+  margin: 2px;
+  flex: 0;
+}
