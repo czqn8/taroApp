@@ -96,7 +96,7 @@ class Select extends Component {
                                 {
                                     this.state.TagList.map((item,index) => {
                                         return (
-                                            <View className='at-col tags-item' key={index}>
+                                            <View className='at-col tags-item'>
                                                 <AtTag 
                                                 className={{item:item.active}}
                                                 type='primary'

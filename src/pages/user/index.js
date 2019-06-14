@@ -99,9 +99,9 @@ class User extends Component {
                             </View>
                             <AtList>
                             {
-                                    this.state.menu.map(function(item, index) {
+                                    this.state.menu.map((item, index) => {
                                         return (
-                                            <AtListItem className='menu-title' key={index} title={item.title} onClick={this.menuItemClick.bind(this, index)} arrow='right' />
+                                            <AtListItem className='menu-title' title={item.title} onClick={this.menuItemClick.bind(this, index)} arrow='right' />
                                         )
                                     }, this)
                                         
